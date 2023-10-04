@@ -142,8 +142,6 @@ p {
 
 .feature__menu {
   position: absolute;
-  /* display: flex;
-  flex-direction: column; */
   border-radius: 1rem;
   padding: 1rem 2rem;
   transform: translate(-4rem, 1rem);
@@ -175,15 +173,12 @@ p {
 }
 
 #features:checked ~ .feature__menu {
- opacity: 1;
- width: 12rem;
+  opacity: 1;
+  width: 12rem;
 }
-
 
 .company__menu {
   position: absolute;
-  /* display: flex; 
-  flex-direction: row;  */
   border-radius: 1rem;
   padding: 1rem 2rem;
   transform: translate(-4rem, 1rem);
