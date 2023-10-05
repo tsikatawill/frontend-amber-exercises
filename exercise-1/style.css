@@ -1,3 +1,180 @@
 * {
+  font-family: gabarito;
+}
+body {
+  margin-top: 0%;
+  margin-left: 0%;
+  padding-left: 41px;
+}
+header {
+  display: flex;
+  height: 87px;
+  width: 81rem;
+  flex-wrap: wrap;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.navlinks {
+  display: flex;
+  width: 34rem;
+  width: 533px;
+  height: 41px;
+  position: relative;
+  color: rgb(111, 114, 114);
+}
+
+.features {
+  display: flex;
+  width: 82px;
+  margin-left: 70px;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+
+.features img {
+  position: absolute;
+  display: flex;
+  right: 3px;
+  cursor: pointer;
+}
+.company {
+  display: flex;
+  width: 87px;
+  margin-left: 20px;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+}
+.company img {
+  position: absolute;
+  top: 18px;
+  display: flex;
+  right: 1px;
+  cursor: pointer;
+}
+
+.careers {
+  width: 60px;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.careers a {
+  text-decoration: none;
+  color: black;
+  color: rgb(111, 114, 114);
+}
+
+.about {
+  width: 60px;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.about a {
+  text-decoration: none;
+  color: rgb(111, 114, 114);
+}
+
+.signin {
+  width: 670px;
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  align-items: center;
+}
+
+.signin a {
+  width: 70px;
+  justify-content: center;
   margin: 0%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(111, 114, 114);
+}
+.signin button {
+  display: flex;
+  cursor: pointer;
+  border: solid;
+  border-color: rgb(111, 114, 114);
+  width: 104px;
+  height: 42px;
+  border-radius: 15px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: rgb(111, 114, 114);
+}
+
+main {
+  height: 850px;
+  padding-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.side {
+  width: 35rem;
+  height: 660px;
+  padding-top: 6rem;
+  padding-left: 5rem;
+}
+
+.side article {
+  padding-left: 70px;
+  height: 650px;
+}
+
+article h1 {
+  font-size: 80px;
+  margin: 0%;
+  padding: 0%;
+}
+
+article p {
+  font-size: larger;
+  color: rgb(111, 114, 114);
+  margin: 0%;
+}
+
+.image {
+  padding-top: 30px;
+}
+
+.learn a {
+  width: 162px;
+  height: 56px;
+  justify-content: center;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.footer {
+  width: 540px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+section {
+  width: 550px;
+  height: 760px;
 }
