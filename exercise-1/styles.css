@@ -13,21 +13,54 @@ body {
 }
 
 .logo {
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  align-items: center;
+}
+
+.logo-menu {
+  display: flex;
+  align-items: center;
 }
 
 .arrow {
   margin-left: 20px;
 }
 
-nav ul {
+nav div ul li a:hover {
+  color: hsl(0, 0%, 8%);
 }
 
-nav ul li {
+nav div ul li {
   display: inline-block;
   list-style: none;
   padding-top: 0px;
   padding-right: 30px;
+}
+nav div ul li ul {
+  display: none;
+}
+
+nav div ul li ul.dropdown {
+  background: hsl(0, 0%, 98%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  top: 50px;
+  width: 130px;
+  align-items: left;
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px 10px 10px 15px;
+  font-size: 16px;
+  position: absolute;
+}
+
+nav div ul li:hover ul.dropdown {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding-top: 4px;
+  gap: 5px;
 }
 
 .login-bttn {
@@ -37,6 +70,11 @@ nav ul li {
   background-color: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 41%);
   font-family: "Epilogue", sans-serif;
+  cursor: pointer;
+}
+
+.login-bttn:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 .register-bttn {
@@ -47,14 +85,16 @@ nav ul li {
   color: hsl(0, 0%, 41%);
   font-family: "Epilogue", sans-serif;
   margin-right: 30px;
+  cursor: pointer;
 }
-/* 
-DIV {
-  justify-content: space-around;
-} */
+
+.register-bttn:hover {
+  border-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
 
 .image {
-  width: 350px;
+  width: 360px;
   height: 500px;
   float: right;
   margin-left: 5px;
@@ -82,15 +122,24 @@ DIV {
 
 .learn-more-bttn {
   background-color: hsl(0, 0%, 8%);
-  color: aliceblue;
-  border-radius: 8px;
-  height: 40px;
+  color: hsl(0, 0%, 98%);
+  border-radius: 12px;
+  height: 48px;
   width: 150px;
   margin-top: 30px;
   padding: 15px 15px 15px 15px;
   border: none;
   font-family: "Epilogue", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.learn-more-bttn:hover {
+  border: solid;
+  border-color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
 }
 
 .clients {
@@ -100,4 +149,13 @@ DIV {
 
 .client-image {
   width: 110px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
