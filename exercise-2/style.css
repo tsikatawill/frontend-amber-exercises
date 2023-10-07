@@ -1,0 +1,192 @@
+* {
+  font-family: Hanken Grotesk;
+}
+p {
+  font-size: 18px;
+}
+body {
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-left: 100px;
+}
+
+main {
+  width: 370px;
+  height: 530px;
+  display: flex;
+}
+.scorecard {
+  background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  width: 100%;
+  height: 100%px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0%;
+}
+.scorecard div {
+  text-align: center;
+}
+.scorecard h3 {
+  color: hsl(241, 100%, 89%);
+}
+
+aside {
+  width: 375px;
+  height: 100%;
+  margin-left: 40px;
+}
+.criteria {
+  border: solid seagreen 1px;
+  width: 290px;
+  height: 59px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  padding-left: 18px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.criteria div {
+  font-size: 18px;
+  position: absolute;
+
+  right: 17px;
+}
+img {
+  padding-right: 16px;
+  width: 23px;
+  height: 28px;
+}
+
+.side b {
+  right: 60px;
+}
+aside h1 {
+  margin-bottom: 30px;
+  color: hsl(224, 30%, 27%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.c1 {
+  background-color: hsl(0, 100%, 67%, 0.1);
+}
+.c2 {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+.c3 {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+.c4 {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  color: hsl(234, 85%, 45%);
+}
+.continue {
+  width: 308px;
+  height: 59px;
+  border-radius: 30px;
+  background-color: hsl(224, 30%, 27%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.continue:hover {
+  background-color: hsl(241, 81%, 54%);
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: hsl(221, 100%, 96%);
+}
+a:visited {
+  /* color: hsl(241, 81%, 54%) */
+}
+.circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  height: 190px;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.circle h1 {
+  width: 79px;
+  height: 50px;
+  margin-bottom: 0%;
+  font-size: 70px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle p {
+  margin-top: 0%;
+  padding-top: 19px;
+  color: hsl(241, 100%, 89%);
+}
+.score {
+  color: hsl(225, 13%, 48%);
+}
+.score b {
+  color: hsl(224, 30%, 27%);
+}
+.scorecard h2 {
+  color: white;
+}
+.foot p {
+  margin: 6px;
+  color: hsl(241, 100%, 89%);
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    flex-direction: column;
+    background-color: white;
+    margin: 0%;
+    justify-content: center;
+    width: fit-content;
+  }
+  main {
+    width: 100%;
+  }
+  aside {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    padding-bottom: 90px;
+  }
+  .scorecard {
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+  }
+}
