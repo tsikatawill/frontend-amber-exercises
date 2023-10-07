@@ -43,7 +43,6 @@ aside {
   margin-left: 40px;
 }
 .criteria {
-  border: solid seagreen 1px;
   width: 290px;
   height: 59px;
   margin-bottom: 30px;
@@ -124,9 +123,7 @@ a {
   font-size: 18px;
   color: hsl(221, 100%, 96%);
 }
-a:visited {
-  /* color: hsl(241, 81%, 54%) */
-}
+
 .circle {
   display: flex;
   flex-direction: column;
@@ -182,7 +179,6 @@ a:visited {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: ;
     padding-bottom: 90px;
   }
   .scorecard {
