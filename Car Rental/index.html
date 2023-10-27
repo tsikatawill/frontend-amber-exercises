@@ -1,130 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renteezy | Car Rentals</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    
-    <nav>
-      <div class="logo">Renteezy</div>
-      <ul>
-        <li><a href="#">Contact us</a></li>
-        <li class="btn"><a href="#">Sign up</a></li>
-        <li class="btn"><a href="#">Log in</a></li>
-      </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renteezy | Car Rentals</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">Renteezy</div>
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li class="btn"><a href="#">Sign up</a></li>
+          <li class="btn"><a href="#">Log in</a></li>
+        </ul>
+      </nav>
 
-    <header>
-      <div class="hero">
-        <form action="">
-          <select name="type" id="type">
-            <option value="0">Select your car type</option>
-          </select>
-          <div class="pick">
-          <div class="in-label">
-           <label for="date-pickup">Pick-up</label>
-           <input type="date" name="date-pickup" id="date-pickup">
-          </div>
-           <div>
-          <input type="time" name="time-pickup" id="time-pickup" class="time">
+      <header>
+        <div class="hero-text">
+          <h3>GET 15% OFF YOUR RENTAL</h3>
+          <h1>
+            Save <span>BIG !</span> <br />on our top car rental <br />deal !
+          </h1>
+          <button id="rent">Book Now &rarr;</button>
         </div>
-      </div>
-
-      <div class="date">
-        <div class="in-label">
-           <label for="date-return">Return</label>
-           <input type="date" name="date-return" id="date-return">
-          </div>
-          <input type="time" name="time-return" id="time-return" class="time">
-      </div>
-      <button> <a href="./register.html">CONTINUE TO REGISTER &rarr;</a></button>
-
-        </form>
-      </div>
-      <div class="hero-img">
-        <img src="./assets/images/3.png" alt="photo of car" width="700px">
-      </div>
-  </header>
-  Renteezy
-Renteezy is a website that allows users to rent cars.
-
-Add a showcase of different cars.
-Add a form that must take the following data. You can add more fields to your liking.
-Username
-Email
-Address
-Passport picture
-Phone number
-Date of return
-Time of return
-Type of car (should be a select element with different car options)
-Submitting the form should display all the data collected in the form.
-Bonus points for allowing users print the data to a PDF. You are free to seek help from StackOverflow, Bard, ChatGPT, etc.
-
-
-
-  <main>
-
-    <section>
-     
-    </section>
-    <section class="top-deals">
-      <h2>Top Deals</h2>
-      <div class="cards">
-        <div class="card-col">
-          
-            <img  class="card-img" src ="./assets/images/1.jpg" alt="photo of car">
-          
-            <h3>VW Golf VII <span>100gh/day </span></h3>
-            <button>Rent Now d</button>
+        <div class="hero-img">
+          <img src="./assets/images/3.png" alt="photo of car" width="700px" />
         </div>
-        <div class="card-col">
-          
-            <img class="card-img"  src="./assets/images/2.png" alt="photo of car">
-          
-            <h3>VW Golf VII <span>100gh/day </span></h3>
-            <button>Rent Now d</button>
-        </div>
-        <div class="card-col">
-          
-            <img  class="card-img" src ="./assets/images/4.png" alt="photo of car">
-          
-            <h3>Mercedes-Benz GLK <span>100gh/day </span></h3>
-            <button>Rent Now d</button>
-        </div>
-        <div class="card-col">
-          
-            <img  class="card-img" src ="./assets/images/5.jpg" alt="photo of car">
-         
-            <h3>Audi A1 S-LINE <span>100gh/day </span></h3>
-            <button>Rent Now d</button>
-        </div>
-        <div class="card-col">
-          
-            <img  class="card-img" src ="./assets/images/6.jpg" alt="photo of car">
+      </header>
       
-            <h3>BMW 320 ModernLine <span>100gh/day </span></h3>
-            <button>Rent Now d</button>
+      <main>
+        <div class="forms">
+          <form action="#" class="register" id="info">
+          <div class="form-1" >
+            <select name="type" id="type">
+              <option value="0">Select your car type</option>
+              <option value="VW Golf VII">VW Golf VII</option>
+              <option value="Mercedes-Benz GLK">Mercedes-Benz GLK</option>
+              <option value="Audi A1 S-LINE">Audi A1 S-LINE</option>
+            </select>
+
+            <div class="pick">
+              <div class="in-label">
+                <label for="date-pickup">Pick-up</label>
+                <input type="date" name="date-pickup" id="date-pickup" />
+              </div>
+              <div>
+                <input
+                  type="time"
+                  name="time-pickup"
+                  id="time-pickup"
+                  class="time"
+                />
+              </div>
+            </div>
+
+            <div class="date">
+              <div class="in-label">
+                <label for="date-return">Return</label>
+                <input type="date" name="date-return" id="date-return" />
+              </div>
+              <div>
+                <input
+                  type="time"
+                  name="time-return"
+                  id="time-return"
+                  class="time"
+                />
+              </div>
+            </div>
+          </div>
+            <h3>Personal Information</h3>
+
+            <label for="passportImage">Upload Passport Image:</label>
+            <input type="file" id="passportImage" name="passportImage" accept="image/*" required><br><br>
+            <img id="imagePreview" src="#" alt="Preview" style="max-width: 300px; display: none;"><br><br>
+            <!-- <input type="submit" value="Submit"> -->
+
+            <div class="firstname register-label">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="firstname"
+                required
+              />
+            </div>
+            <div class="lastname register-label">
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="lastname"
+                required
+              />
+            </div>
+            <div class="age register-label">
+              <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="age"
+                required
+              />
+            </div>
+            <div class="phone register-label">
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="phone"
+                required
+              />
+            </div>
+            <div class="email register-label">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="emailh@gmail.com"
+                required
+              />
+            </div>
+            <div class="address register-label">
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="address"
+                required
+              />
+            </div>
+            <div class="city register-label">
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="city"
+                required
+              />
+            </div>
+            <div>
+              <button class="submit">submit</button>
+            </div>
+          </form>
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+
+         
+        </div>
+        <div class="display">
+          <button id="close">X</button>
+          <ul id="itemList">
+            <li class="data0">DETAILS</li>
+            <li class="data1"></li>
+            <li class="data2" ></li>
+            <li class="data3"></li>
+            <li class="data4"></li>
+            <li class="data5"></li>
+              <li class="data6"></li>
+              <li class="data7
+              "></li>
+              <li class="data8"></li>
+              <li class="data9"></li>
+              <li class="data10"></li>
+              <li class="data11"></li>
+              <li class="data12"></li>
+              <button onclick="generatePDF" id="pdf">Download PDF &rarr;</button>
+            </ul>
+          </div>
+         
+          
+          
+          <section class="top-deals">
+            <div class="cards">
+        <div class="card-col">
+          
+          <img  class="card-img" src ="./assets/images/1.jpg" alt="photo of car">
+          <div class="img-text">
+          <h4>VW Golf VII <span>1850gh/day </span></h4>
+          <button id="rent">Book Now &rarr;</button>
+        </div>
+      </div>
+        <div class="card-col">
+          <img class="card-img"  src="./assets/images/2.png" alt="photo of car">
+          <div class="img-text">
+          <h4>VW Golf VII <span>170gh/day </span></h4>
+          <button id="rent">Book Now &rarr;</button>        </div>
         </div>
         <div class="card-col">
-         
-            <img  class="card-img" src ="./assets/images/7.jpg" alt="photo of car">
-         
-            <h3>VW Golf VII <span>100gh/day </span></h3>
-            <button>Rent Now d</button>
-        </div>
-       
-      </div>
-
-    </section>
-  </main>
+          
+          <img  class="card-img" src ="./assets/images/4.png" alt="photo of car">
+          <div class="img-text">
+          <h4>Mercedes-Benz GLK <span>100gh/day </span></h4>
+          <button id="rent">Book Now &rarr;</button>        </div></div>
+        <div class="card-col">
+          
+          <img  class="card-img" src ="./assets/images/5.jpg" alt="photo of car">
+          <div class="img-text">
+          <h4>Audi A1 S-LINE <span>200gh/day </span></h4>
+          <button id="rent">Book Now &rarr;</button>        </div></div>
+        <div class="card-col">
+          
+          <img  class="card-img" src ="./assets/images/6.jpg" alt="photo of car">
+          <div class="img-text">
+          <h4>BMW 320 ModernLine <span>230gh/day </span></h4>
+          <button id="rent">Book Now &rarr;</button>        </div></div>
+        <div class="card-col">
+          
+          <img  class="card-img" src ="./assets/images/7.jpg" alt="photo of car">
+          <div class="img-text">
+          <h4>VW Golf VII <span>100gh/day </span></h4>
+          <button id="rent">Book Now &rarr;</button>        </div></div>
+        
+        
+        
+      </section>
+    </main>
+  </div>
+  <!-- <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
   
+ 
 
-</div>
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
