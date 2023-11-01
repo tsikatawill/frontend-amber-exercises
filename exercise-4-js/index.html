@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renteezy</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <img
+        class="logo"
+        src="./images/—Pngtree—sport car logo vector_6398339.png"
+        alt=""
+      />
+      <h1 class="company-name">RENTEEZY</h1>
+    </div>
+
+    <h2 style="text-align: center">Renting made easy.</h2>
+    <h3 style="text-align: center">Your #1 Car Rental</h3>
+
+    <div class="slideshow-container">
+      <div class="slides fade">
+        <img
+          class="image"
+          src="./images/2018-chevrolet-camaro-zl1.jpg"
+          alt="Chevrolet Camaro"
+        />
+      </div>
+      <div class="slides fade">
+        <img
+          class="image"
+          src="./images/chevcorvette.jpg"
+          alt="Chevrolet Corvette"
+        />
+      </div>
+      <div class="slides fade">
+        <img class="image" src="./images/fordmustang.jpg" alt="Ford Mustang" />
+      </div>
+      <div class="slides fade">
+        <img
+          class="image"
+          src="./images/mclarenartura.jpg"
+          alt="McLaren Artura"
+        />
+      </div>
+      <div class="slides fade">
+        <img
+          class="image"
+          src="./images/porscheboxster.jpg"
+          alt="Porsche 718 Boxster"
+        />
+      </div>
+      <div class="slides fade">
+        <img class="image" src="./images/toyota-gr86.jpg" alt="Toyota GR86" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+    </div>
+
+    <h2 style="text-align: center">Rent a car</h2>
+    <form id="car-rental-form">
+      <label for="username">Username: </label>
+      <input type="text" id="username" placeholder="Username" />
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" placeholder="Email Address" />
+
+      <label for="address">Address: </label>
+      <input type="text" id="address" placeholder="Address" />
+
+      <label for="picture">Insert your passport picture: </label>
+      <input type="file" id="picture" placeholder="passport picture" />
+
+      <label for="telNumber">Phone number: </label>
+      <input type="tel" id="telNumber" placeholder="Phone Number" />
+
+      <label for="dateOfReturn">Date of return: </label>
+      <input type="date" id="dateOfReturn" />
+
+      <label for="timeOfReturn">Time of return: </label>
+      <input type="time" id="timeOfReturn" />
+
+      <label for="typeOfCar">Type of car: </label>
+      <select id="typeOfCar" name="typeOfCar" multiple>
+        <option selected>Chevrolet Camaro ZL1</option>
+        <option>Chevrolet Corvette</option>
+        <option>Ford Mustang</option>
+        <option>McLaren Artura</option>
+        <option>Porsche 718 Boxster</option>
+        <option>Toyota GR86</option>
+      </select>
+
+      <input id="submitButton" onclick="displayFormData()" type="submit" />
+    </form>
+
+    <div id="form-data"></div>
+    <script>
+      //   const x = document.forms["form1"];
+      //   let text = "";
+      //   for (let i = 0; i < x.length; i++) {
+      //     text += x.elements[i].value + "<br>";
+      //   }
+      //   document.getElementById("demo").innerHTML = text;
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+      function displayFormData() {
+        const formData = {
+          username: document.getElementById("username").value,
+          email: document.getElementById("email").value,
+          address: document.getElementById("address").value,
+          picture: document.getElementById("passport-picture").value,
+          telNumber: document.getElementById("telNumber").value,
+          dateOfReturn: document.getElementById("dateOfReturn").value,
+          timeOfReturn: document.getElementById("timeOfReturn").value,
+          typeOfCar: document.getElementById("typeOfCar").value,
+        };
+
+        // Display the collected data
+        const formDataDiv = document.getElementById("form-data");
+        formDataDiv.innerHTML = "<h2>Rental Information:</h2>";
+        for (const key in formData) {
+          formDataDiv.innerHTML += `<p><strong>${key}:</strong> ${formData[key]}</p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
