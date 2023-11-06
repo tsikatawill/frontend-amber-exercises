@@ -147,6 +147,23 @@ p {
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
+.arrUp {
+  position: absolute;
+  display: none;
+  z-index: 10;
+}
+
+.arrDwn {
+  position: absolute;
+  
+}
+
+.arrwBtn {
+  display: inline-block;
+  position: relative;
+  height: .5rem;
+}
+
 
 .feature__menu {
   position: absolute;
@@ -175,12 +192,12 @@ p {
  margin-right: 1rem;
 }
 
-#features {
+.features {
   opacity: 0;
   width: 0;
 }
 
-#features:checked ~ .feature__menu {
+.features:checked ~ .feature__menu {
   opacity: 1;
   width: 12rem;
 }

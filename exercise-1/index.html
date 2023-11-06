@@ -29,11 +29,14 @@
         <ul id="navigation">
           <li class="list">
             <div class="feature">
-              <input type="checkbox" name="features" id="features" />
+              <input type="checkbox" name="features" id="features" class="features" />
               <label for="features"
                 >Features
-                <img src="./images/icon-arrow-down.svg" alt="" class="features"
-              /></label>
+                <div class="arrwBtn">
+                <img src="./images/icon-arrow-up.svg" alt="" class="arrUp" id="features" />
+                <img src="./images/icon-arrow-down.svg" alt="" class="arrDwn" id="features" />
+              </div>
+            </label>
               <ul class="feature__menu">
                 <li class="feature__list">
                   <img src="./images/icon-todo.svg" alt="" /><a href="#"
@@ -62,8 +65,11 @@
             <input type="checkbox" name="company" id="company" />
             <label for="company"
               >Company
-              <img src="./images/icon-arrow-down.svg" alt="" class="company"
-            /></label>
+              <div class="arrwBtn">
+                <img src="./images/icon-arrow-up.svg" alt="" class="arrUp" />
+                <img src="./images/icon-arrow-down.svg" alt="" class="arrDwn"  />
+              </div>
+          </label>
             <div class="company__menu">
               <ul class="company">
                 <li class="company__item"><a href="#">History</a></li>
@@ -118,5 +124,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Eleazer Abbey</a>.
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
