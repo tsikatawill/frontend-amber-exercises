@@ -1,8 +1,7 @@
-//select buttons
+
 
 const arrowUpBtn = document.querySelector('.arrUp');
 const arrowDownBtn = document.querySelector('.arrDwn');
-
 
 arrowDownBtn.addEventListener('click', () => {
   arrowDownBtn.style.display = 'none';
