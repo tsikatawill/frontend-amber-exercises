@@ -68,16 +68,31 @@ nav li a {
   display: flex;
   gap: 5rem;
 }
+nav li:hover {
+  color:  rgb(2, 75, 85) ;
+  font-weight: 500;
+}
+
 
 /* HEADER */
-
+h1 {
+  margin-top: 10rem;
+  font-size: 4.5rem;
+}
+header p{
+  font-size: 2.8rem;
+  font-weight: 500;
+}
 header {
+  text-shadow: 3px 5px 5px #000;
+  color: #fff;
+  text-align: center;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   margin-top: 5rem;
   background-image: url(./img/jon-tyson-FKkK1hnTe-Q-unsplash.jpg);
   background-size: cover;
-  filter: opacity(.89);
+  filter: blur(.5);
 }
 
 /* MAIN CONTENT */
@@ -125,6 +140,13 @@ button {
   border: 2px solid rgb(2, 75, 85);
   margin: 1rem .8rem 1rem 0 ;
   color: rgb(2, 75, 85);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+button:hover {
+  color: #Fff;
+  background-color:rgb(2, 75, 85) ;
 }
 
 figcaption {
@@ -156,7 +178,7 @@ span {
   margin-top: 3rem;
 }
 
-.side img {
+.add{
   width: 100%;
   border: 1px solid #ccc;
 }
@@ -191,6 +213,95 @@ span {
   padding: .5rem;
   font-size: 1.2rem;
 }
+
+.side li a:hover {
+  padding-top: .2rem;
+  font-weight: 500;
+}
+
+.pop li:hover {
+  font-weight: 500;
+}
+
+.icon {
+  width: 40px;
+}
+.pop {
+  margin-bottom: 2rem;
+}
+.pop li {
+  font-size: 1rem;
+  color: rgb(2, 75, 85);
+  border-bottom: 1px solid  #ccc;
+  padding: 1rem;
+}
+
+.pop p {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 1.5rem 0 1rem 0;
+}
+
+.adds img {
+  /* padding-bottom: .2rem; */
+  margin: 1rem 0 0 4rem ;
+  
+}
+  .adds {
+  }
+
+/********* FOOTER ****** */
+
 footer {
-  background-color: rgba(3, 63, 63, 0.795);
+  background-color: rgb(134, 194, 194);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+
+footer ul {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 3rem;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: .8rem;
+  padding: 1rem ;
+  cursor: pointer;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+}
+
+.follow {
+  text-align: center;
+  padding: 2rem;
+}
+
+.follow p {
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.copy {
+  text-align: center;
+}
+
+.copy h4 {
+  font-size: 1rem;
+
+}
+
+.copy p {
+  font-size: .8rem;
 }
