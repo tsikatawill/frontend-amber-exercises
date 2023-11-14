@@ -50,10 +50,12 @@
             placeholder="Enter your email address"
           />
           <label for="paspportPicture">Insert passport picture</label>
+          <img width="200" height="200" id="image-display" alt="" />
           <input
             type="file"
             id="paspportPicture"
             name="ppicture"
+            accept="image/*"
             placeholder="Upload passport picture"
           />
           <label for="phoneNumber">Phone number:</label>
@@ -133,6 +135,16 @@
     <script>
       const myForm = document.querySelector("form");
       const display = document.querySelector(".display");
+      const imageDisplay = document.querySelector("#image-display");
+      const imageInput = document.querySelector("#paspportPicture");
+
+      imageInput.addEventListener("change", (e) => {
+        const uploadedFile = e.target.files[0];
+        const fileURL = URL.createObjectURL(uploadedFile);
+
+        imageDisplay.src = fileURL;
+      });
+
       const formValidation = () => {
         if (myForm["fullname"].value === "") {
           alert("Name required");
@@ -157,7 +169,7 @@
       };
       myForm.addEventListener("submit", (event) => {
         event.preventDefault();
-        validateForm();
+        formValidation();
       });
     </script>
   </body>
