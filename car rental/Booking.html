@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <script src="./script.js"></script> -->
+    <div class="heading">
+      <h1>FORM DATA</h1>
+    </div>
+
+    <form>
+      <div class="wrapper">
+        <div class="wrapper1">
+          <label for="fullname">Fullname:</label>
+          <input
+            style="width: 300px"
+            type="text"
+            id="fullname"
+            name="fname"
+            placeholder="Enter your fullname "
+          />
+
+          <label for="age">Age:</label>
+          <input
+            style="width: 300px"
+            type="age"
+            id="age"
+            name="age"
+            placeholder="Specify age"
+          />
+
+          <label for="email">Email address:</label>
+          <input
+            style="width: 300px"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+          <label for="paspportPicture">Insert passport picture</label>
+          <input
+            type="file"
+            id="paspportPicture"
+            name="ppicture"
+            placeholder="Upload passport picture"
+          />
+          <label for="phoneNumber">Phone number:</label>
+          <input
+            style="width: 300px"
+            type="tel"
+            id="phoneNumber"
+            name="phone"
+            placeholder="Enter phone number"
+          />
+          <label for="returnDate">Date of Return:</label>
+          <input
+            style="width: 300px"
+            type="date"
+            id="returnDate"
+            name="date"
+            placeholder=""
+          />
+        </div>
+
+        <div class="wrapper1">
+          <label for="returnTime">Time of Return:</label>
+          <input
+            style="width: 300px"
+            type="time"
+            id="returnTime"
+            name="time"
+            placeholder=""
+          />
+
+          <label for="cars">Select Car:</label>
+          <select style="width: 300px" name="cars" id="cars">
+            <option value="">BMW 6-Series Gran Coupe</option>
+            <option value="">Chevrolet Camaro WMV20</option>
+            <option value="">Lamborghini V520</option>
+            <option value="">Audi A3 Sedan</option>
+            <option value="">Infiniti Z5</option>
+            <option value="">Porsche 718 Cayman</option>
+            <option value="">BMW 8-Series Coupe</option>
+            <option value="">BMW Xseries-6</option>
+          </select>
+
+          <div class="LicWrapper">
+            <label style="width: 300px" for="license">
+              Do you have a certified driver's license?</label
+            >
+            <div>
+              <input type="radio" id="license" value="DVLA" name="dvla" />
+              <label style="width: 300px" for="license">YES</label>
+            </div>
+            <div>
+              <input type="radio" id="license" value="DVLA" name="dvla" />
+              <label for="license">NO</label>
+            </div>
+
+            <br />
+          </div>
+
+          <textarea
+            style="width: 300px"
+            name="comment"
+            id="comment"
+            cols="50"
+            rows="4"
+          >
+        Add any concern, comments or questions</textarea
+          >
+        </div>
+      </div>
+      <button style="width: 300px" type="submit">Submit</button>
+    </form>
+    <div>
+      <h1>CUSTOMER DATA</h1>
+      <div class="display"></div>
+    </div>
+
+    <script>
+      const myForm = document.querySelector("form");
+      const display = document.querySelector(".display");
+      const formValidation = () => {
+        if (myForm["fullname"].value === "") {
+          alert("Name required");
+        } else if (myForm["age"].value < 18) {
+          alert("Must be 18 years");
+        } else if (myForm["email"].value === "") {
+          alert("email required");
+        } else if (myForm["ppicture"].value === "") {
+          alert("Passport Picture required");
+        } else if (myForm["dvla"].value === "NO") {
+          alert("Must Have A Drivers' License");
+        } else {
+          const fullname = myForm["fullname"].value;
+          const age = myForm["age"].value;
+          const email = myForm["email"].value;
+          const ppicture = myForm["ppicture"].value;
+          const dvla = myForm["dvla"].value;
+          display.innerHTML = `Hello. Your details have been received. Please check your mail by the close of tofay ${fullname}, ${age}, ${email} ${ppicture}, ${dvla}`;
+
+          form.reset();
+        }
+      };
+      myForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        validateForm();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Kumbh Sans;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  height: 100vh;
+  background-color: dodgerblue;
+
+  justify-content: center;
+  align-items: center;
+}
+.LicWrapper {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-decoration: wavy; */
+}
+.heading {
+  background-color: black;
+  color: antiquewhite;
+  background: linear-gradient(to left blue red);
+  position: sticky;
+}
+.wrapper1 {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}

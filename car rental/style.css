@@ -1,0 +1,269 @@
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  padding: 2rem;
+  font-size: larger;
+}
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar ul a {
+  transition: color 0.4s ease-in-out;
+}
+.navbar ul a {
+  transition: 0.4s ease-in-out;
+}
+.navbar ul a:hover {
+  color: blue;
+  font-size: 22px;
+}
+
+.navbar h1 {
+  padding: 2rem;
+}
+
+main {
+  background-image: url(./images/welcome-hero/welcome-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+main h1 {
+  color: wheat;
+  font-size: 3rem;
+}
+main h3 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+main a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  width: 200px;
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 1rem;
+  font-size: larger;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(173, 54, 54);
+  transition: 0.4s ease-out;
+}
+
+.service-items-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+  font-size: larger;
+  gap: 2rem;
+  /* border: solid firebrick; */
+  padding: 25px;
+}
+.service-item-1 {
+  width: 50%;
+}
+.service-item-1:hover {
+  background: #5e5ef3;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  /* border: 1px solid #4e4ffa; */
+  box-shadow: 0 12px 30px 0px rgba(0, 1, 193, 0.2);
+}
+.service-item-1 p {
+  text-align: center;
+}
+.service-item-2:hover {
+  background: #4e4ffa;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+  /* border: 1px solid #4e4ffa; */
+  box-shadow: 0 12px 30px 0px rgba(0, 1, 193, 0.2);
+}
+.service-item-2 {
+  /* border: solid green; */
+  width: 50%;
+}
+.service-item-2 p {
+  text-align: center;
+}
+
+.service-item-1 img {
+  margin-left: 40%;
+  margin-bottom: 15px;
+}
+.service-item-2 img {
+  margin-left: 40%;
+  /* margin-bottom: 13px; */
+}
+.service-item-2 h3 {
+  text-align: center;
+}
+.service-item-1 h3 {
+  text-align: center;
+}
+section {
+  background-color: #eaebee;
+  /* height: 100vh; */
+  /* border: solid black; */
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: solid hotpink; */
+  text-align: center;
+  /* color: #4e4ffa; */
+  /* font-size: 300px; */
+}
+#featured-cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 10px 10px; */
+}
+.featured-cars-wrapper {
+  flex: 1 0 24%;
+  /* border: solid aqua; */
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 3.5px;
+  margin-bottom: 30px;
+  /* margin: 3.5px 3.5px; */
+  /* margin-left: ; */
+}
+.featured-cars-wrapper img span {
+  flex: 1;
+}
+
+article {
+  /* border: solid violet; */
+  height: 400px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  font-size: larger;
+  padding: 15px;
+  padding-bottom: ;
+  background-color: rgb(255, 255, 255);
+}
+.brand-logos {
+  /* border: solid salmon; */
+  display: flex;
+  /* padding: 15px 15px; */
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 170px;
+}
+footer {
+  background-color: #2a2d54;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 130vh;
+  padding: 50px 10px;
+  flex-wrap: wrap;
+  /* font-size: larger; */
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.footer-info {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-info a {
+  text-decoration: none;
+  color: white;
+}
+.footer-about {
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.footer-about a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+.footer-about ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer-brand a {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-decoration: none;
+  color: white;
+  padding-top: 45px;
+}
+.footer-newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+.footer-newsletter form {
+  display: flex;
+  gap: 10px;
+}
+.bookbtn {
+  background-color: #000000;
+  border-radius: 20px;
+  width: 100vw;
+  text-align: center;
+}
+.bookbtn a {
+  text-decoration: none;
+  color: white;
+}
+.bookbtn:hover {
+  background-color: blue;
+  transition: 0.4s ease-in-out;
+}
