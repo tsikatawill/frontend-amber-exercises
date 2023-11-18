@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Inter";
+  background-color: #e3c903;
+}
+.main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rent-card {
+  display: flex;
+  height: 600px;
+  width: 1440px;
+  background-color: #131313;
+  color: #e3c903;
+  border-radius: 10px;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vid {
+  height: 600px;
+  width: 99%;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+}
+.name-email {
+  display: flex;
+  gap: 3.5rem;
+}
+.date-time {
+  display: flex;
+  gap: 3rem;
+}
+.date {
+  width: 150px;
+}
+.time {
+  width: 150px;
+}
+.input-style {
+  height: 20px;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.submit-btn {
+  height: 30px;
+  width: 100px;
+  background-color: #e3c903;
+  border: none;
+  border-radius: 10px;
+}
+.submit-btn:hover {
+  background-color: #131313;
+  color: #e3c903;
+  border: 2px solid #e3c903;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.go-back {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form-data {
+  background-color: #131313;
+  width: 400px;
+  justify-content: center;
+  margin: 10px auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.form-data:hover {
+  box-shadow: 10px 10px 20px #e3c903;
+}

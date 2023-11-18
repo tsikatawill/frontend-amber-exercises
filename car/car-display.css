@@ -1,0 +1,158 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter";
+}
+
+.nav-menu {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: #131313;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.user-info {
+  display: flex;
+  gap: 4rem;
+  align-content: center;
+}
+.signup-btn {
+  background-color: #ffffff;
+
+  border: 2px solid #e3c903;
+  border-radius: 12px;
+  color: #131313;
+  width: 85px;
+  height: 30px;
+}
+
+.login-btn {
+  background-color: #e3c903;
+  border: none;
+  width: 85px;
+  border-radius: 12px;
+}
+.signup-btn:hover {
+  cursor: pointer;
+  background-color: #e3c903;
+  color: #ffffff;
+  border: none;
+}
+.login-btn:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #e3c903;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  position: relative;
+}
+.logo {
+  display: flex;
+
+  justify-content: center;
+  /* font-weight: 900;
+  font-size: large; */
+}
+.yellow-container {
+  padding-top: 1rem;
+  flex: 0.15;
+  background-color: #e3c903;
+  height: 850px;
+}
+.white-container {
+  padding-top: 1rem;
+  padding: 1rem;
+  padding-right: 1rem;
+
+  flex: 0.85;
+  background-color: #ffffff;
+}
+.cars-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.car-card {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem;
+  width: 7cm;
+  height: 9cm;
+  background-color: #ffffff;
+  color: #131313;
+  gap: 1rem;
+  border-radius: 10px;
+  box-shadow: 4px 3px 100px rgb(154, 154, 153);
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  /* gap: 3rem; */
+  justify-content: space-between;
+}
+.img-container {
+  display: flex;
+  align-content: center;
+  width: 6cm;
+  background-color: #e1dfdf;
+  border-radius: 10px;
+}
+.image {
+  width: 6cm;
+}
+.year {
+  border: 1px solid #9a9999;
+  width: 40px;
+  border-radius: 4px;
+}
+.price {
+  color: #e3c903;
+}
+.per-month {
+  font-size: 11px;
+}
+.rent-link {
+  /* height: 30px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  background-color: #e3c903;
+  border: none;
+  border-radius: 10px;
+  position: relative; */
+}
+.rent-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color: #e3c903;
+  border: none;
+  border-radius: 10px;
+
+  /* position: relative; */
+}
+.rent-button:hover {
+  cursor: pointer;
+  background-color: #bca70a;
+}

@@ -1,0 +1,121 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Inter";
+}
+
+.nav-menu {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.user-info {
+  display: flex;
+  gap: 4rem;
+  align-content: center;
+}
+.signup-btn {
+  background-color: #131313;
+  border-color: #e3c903;
+  border-radius: 12px;
+  color: #e3c903;
+  width: 85px;
+  height: 30px;
+}
+
+.login-btn {
+  background-color: #e3c903;
+  border: none;
+  width: 85px;
+  border-radius: 12px;
+}
+.signup-btn:hover {
+  cursor: pointer;
+  background-color: #e3c903;
+  color: #131313;
+  border: none;
+}
+.login-btn:hover {
+  cursor: pointer;
+  background-color: #131313;
+  color: #e3c903;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+
+  position: relative;
+}
+.logo {
+  text-align: center;
+}
+.yellow-container {
+  padding-top: 1rem;
+  flex: 0.15;
+  background-color: #e3c903;
+  position: relative;
+}
+.black-container {
+  padding-top: 1rem;
+  padding: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  flex: 0.85;
+  background-color: #131313;
+}
+.img-container {
+  position: absolute;
+  left: -200px;
+  top: 250px;
+}
+.ferrari {
+  width: 60rem;
+  /* height: 20rem; */
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: end;
+  padding-top: 4rem;
+  padding-right: 3rem;
+}
+.catchphrase {
+  color: #e3c903;
+  bottom: 2rem;
+  font-size: 7rem;
+  text-align: right;
+}
+.short-ad {
+  color: #888686;
+  text-align: right;
+}
+.rent-button {
+  margin-top: 3rem;
+  background-color: #e3c903;
+
+  padding: 1rem;
+  color: #131313;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 23px;
+}
+.rent-button:hover {
+  cursor: pointer;
+  background-color: #e3ba03;
+}
