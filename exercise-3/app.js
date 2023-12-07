@@ -35,8 +35,37 @@ document.getElementById('add').addEventListener('click', ()=>{
 });
 
 
-// cart
 
-document.getElementById('cart').addEventListener('click', ()=>{
-  
-})
+
+// IMAGE SLIDER
+
+const display = document.querySelector('.img-display');
+const popup = document.querySelector('.img-pop');
+const scrollContainer = document.querySelector(".img-slider");
+const backBtn = document.getElementById("left");
+const nextBtn = document.getElementById("right");
+const closeBtn = document.querySelector(".close");
+
+scrollContainer.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  scrollContainer.scrollLeft += e.deltaY;
+});
+
+nextBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft += 640;
+});
+
+backBtn.addEventListener("click", () => {
+  scrollContainer.style.scrollBehavior = "smooth";
+  scrollContainer.scrollLeft -= 640; //width of image 640px
+});
+
+closeBtn.addEventListener('click', ()=> {
+  popup.style.display = 'none';
+});
+
+display.addEventListener('click', ()=> {
+  popup.style.display = 'block';
+
+});

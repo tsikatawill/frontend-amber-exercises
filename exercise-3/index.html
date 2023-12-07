@@ -28,16 +28,20 @@
       </ul>
       <div class="user">
         <div class="con-cart">
-        <p id="cartDis" class="cartDis">0</p>
-        <img src="./images/icon-cart.svg" alt="photo of cart" class="cart" id="cart"/>
-      </div>
+          <p id="cartDis" class="cartDis">0</p>
+          <img
+            src="./images/icon-cart.svg"
+            alt="photo of cart"
+            class="cart"
+            id="cart"
+          />
+        </div>
         <img src="./images/image-avatar.png" alt="avatar" class="user-photo" />
       </div>
     </nav>
     <section>
       <div class="cartItem">
         <h3>Cart</h3>
-        
       </div>
     </section>
 
@@ -47,31 +51,40 @@
           <img src="./images/icon-previous.svg" id="left" class="btn-white" />
           <img src="./images/icon-next.svg" id="right" class="btn-white" />
         </div>
-        <img src="./images/icon-close.svg"  class="close">
+        <img src="./images/icon-close.svg" class="close" />
         <div class="img-slider" id="img-slider">
           <div>
-          <img src="./images/image-product-1.jpg" alt="" />
+            <img src="./images/image-product-1.jpg" alt="" />
           </div>
           <div>
-          <img src="./images/image-product-2.jpg" alt="" />
+            <img src="./images/image-product-2.jpg" alt="" />
           </div>
           <div>
-          <img src="./images/image-product-3.jpg" alt="" />
+            <img src="./images/image-product-3.jpg" alt="" />
           </div>
           <div>
-          <img src="./images/image-product-4.jpg" alt="" />
+            <img src="./images/image-product-4.jpg" alt="" />
           </div>
         </div>
-       
       </div>
       <scetion class="container">
         <div class="card-1">
           <img src="./images/image-product-1.jpg" alt="" class="img-display" />
           <div class="btn">
-            <img src="./images/icon-previous.svg" alt="" class="left-btn" id="left" />
-            <img src="./images/icon-next.svg" alt="" class="right-btn" id="right" />
+            <img
+              src="./images/icon-previous.svg"
+              alt=""
+              class="left-btn"
+              id="left"
+            />
+            <img
+              src="./images/icon-next.svg"
+              alt=""
+              class="right-btn"
+              id="right"
+            />
           </div>
-          <div class="select-img" id="img-slider" >
+          <div class="select-img" id="img-slider">
             <img
               src="./images/image-product-1-thumbnail.jpg"
               alt=""
@@ -131,62 +144,6 @@
       </div>
     </main>
 
-    <script>
-
-      const  addBtn = document.getElementById('plus');
-      const  subtractBtn = document.getElementById('minus');
-      let  quantity = document.querySelector('h4');
-      let item = 0;
-
-      // IMAGE SLIDER
-
-      let display = document.querySelector('.img-display');
-      let popup = document.querySelector('.img-pop');
-      let scrollContainer = document.querySelector(".img-slider");
-      let backBtn = document.getElementById("left");
-      let nextBtn = document.getElementById("right");
-      let closeBtn = document.querySelector(".close");
-
-      scrollContainer.addEventListener("wheel", (e) => {
-        e.preventDefault();
-        scrollContainer.scrollLeft += e.deltaY;
-      });
-
-      nextBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 640;
-      });
-
-      backBtn.addEventListener("click", () => {
-        scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft -= 640; //width of image 640px
-      });
-
-      closeBtn.addEventListener('click', ()=> {
-        popup.style.display = 'none';
-      });
-      
-      display.addEventListener('click', ()=> {
-        popup.style.display = 'block';
-
-      });
-
-
-      // PLUS AND MINUS 
-
-      // addBtn.addEventListener('click', ()=>{
-      //   item += 1;
-      //   quantity.innerHTML = item;
-      // });
-
-      // subtractBtn.addEventListener('click',()=>{
-      //   item += -1;
-      //   quantity.innerHTML = item;
-
-      // });
-
-
-    </script>
     <script src="app.js"></script>
   </body>
 </html>
